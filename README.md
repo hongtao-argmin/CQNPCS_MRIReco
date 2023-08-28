@@ -7,4 +7,4 @@ Python implementation of A Complex Quasi-Newton Proximal Method for Image Recons
 ArXiv Paper Link: https://arxiv.org/abs/2303.02586.
 
 
-Implementation will come soon. Please shoot me an email if you want to know immediately once we upload the codes.
+Implementation will come soon. Please shoot me an email (tahong@umich.edu) if you want to know immediately once we upload the codes.
