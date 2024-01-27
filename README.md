@@ -7,4 +7,4 @@ demoGamma.py and demoInnerIter.py: check the robustness of the parameters in our
 
 Please shoot me an email (tahong@umich.edu) if you have challenges to use our code or find any bugs.
 
-My webpage: [https://hongtao-argmin.github.io]
+My webpage: https://hongtao-argmin.github.io
