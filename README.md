@@ -1,10 +1,10 @@
 # A Complex Quasi-Newton Proximal Method for Image Reconstruction in Compressed Sensing MRI
-Python implementation of our ``A Complex Quasi-Newton Proximal Method for Image Reconstruction in Compressed Sensing MRI'' paper
+Python implementation of [Tao Hong](https://hongtao-argmin.github.io), [Luis Hernandez-Garcia](http://fmri.research.umich.edu/about/faculty/hernandez.php), and [Jeffrey A. Fessler](https://web.eecs.umich.edu/~fessler/), ``[A Complex Quasi-Newton Proximal Method for Image Reconstruction in Compressed Sensing MRI](https://arxiv.org/abs/2303.02586)'', To appear in IEEE Transactions on Computational Imaging, 2023.
 
-[Tao Hong](https://hongtao-argmin.github.io), [Luis Hernandez-Garcia](http://fmri.research.umich.edu/about/faculty/hernandez.php), and [Jeffrey A. Fessler](https://web.eecs.umich.edu/~fessler/), ``[A Complex Quasi-Newton Proximal Method for Image Reconstruction in Compressed Sensing MRI](https://arxiv.org/abs/2303.02586)'', 2023.
+demo.py: the reconstruction of different algorithms on spiral and radial acquisitions using wavelet or/and TV regularizers.  
 
+demoGamma.py and demoInnerIter.py: check the robustness of the parameters in our method.
 
-ArXiv Paper Link: https://arxiv.org/abs/2303.02586.
+Please shoot me an email (tahong@umich.edu) if you have challenges to use our code or find any bugs.
 
-
-Implementation will come soon. Please shoot me an email (tahong@umich.edu) if you want to know immediately once we upload the code.
+My webpage: [https://hongtao-argmin.github.io]
