@@ -80,7 +80,6 @@ a_k = 1
 
 # define gamma for QN
 gamma_wav = 1.7
-gamma_TV = 1.7
 gamma_wavTV = 1.7
 gamma_wavTVSmooth = 1.7 
 
