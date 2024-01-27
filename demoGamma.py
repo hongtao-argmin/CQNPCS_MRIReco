@@ -1,5 +1,5 @@
 # Test the choice of \gamma in QNP
-# we test on the TV regularization one with the brain image.
+# we test on the wavelet+TV regularization.
 
 SampleTrj = 'Spiral' #'Radial' # 
 
