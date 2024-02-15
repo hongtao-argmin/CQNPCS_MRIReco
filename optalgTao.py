@@ -26,7 +26,7 @@ def PSNR(original, compressed):
 
 def Power_Iter_handle(A,m,n,tol = 1e-6):
     ''' 
-    Power iteration to compute the maximal eigenvalue of AHA. 
+    Power iteration to compute the maximal eigenvalue of A. 
     A is represented as a handle function.
     '''
     b_k = np.random.randn(m,n)
