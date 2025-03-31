@@ -577,6 +577,7 @@ def QNP_RegL1(num_iters,A,b,TR_off,W=None,original=None,gamma=1.35,a_k=1,save=No
           gr_old = gr.copy()
           # estimate the Hessian with SR1
           y_k_dot = np.real(np.vdot(y_k,y_k))
+          s_k_dot = np.real(np.vdot(s_k,s_k))
           tau_BB = y_k_dot/np.real(np.vdot(s_k,y_k))
           if tau_BB<0:
               x = x_old - gr #run ISTA
@@ -587,7 +588,7 @@ def QNP_RegL1(num_iters,A,b,TR_off,W=None,original=None,gamma=1.35,a_k=1,save=No
               D = H_0
               temp_1 = y_k-D*s_k;
               temp_2 = np.real(np.vdot(temp_1,s_k))
-              if np.abs(temp_2)<=1e-8*np.sqrt(y_k_dot)*np.linalg.norm(temp_1):
+              if np.abs(temp_2)<=1e-8*np.sqrt(s_k_dot)*np.linalg.norm(temp_1):
                   u = 0
                   u_sign = 0
                   Bx_inv = lambda xx: (a_k/D)*xx
@@ -972,6 +973,7 @@ def QNP_WaveletTV(num_iters,A,b,lamda = 0,beta = 0,gamma = 1.6,a_k = 1,\
           x_old = x.copy()
           gr_old = gr.copy()
           y_k_dot = np.real(np.vdot(y_k,y_k))
+          s_k_dot = np.real(np.vdot(s_k,s_k))
           tau_BB = y_k_dot/np.real(np.vdot(s_k,y_k))
           if tau_BB<0:
               temp_grad = x_old - gr    # run ISTA
@@ -983,7 +985,7 @@ def QNP_WaveletTV(num_iters,A,b,lamda = 0,beta = 0,gamma = 1.6,a_k = 1,\
               D = H_0
               temp_1 = y_k-D*s_k;
               temp_2 = np.real(np.vdot(temp_1,s_k))
-              if np.abs(temp_2)<=1e-8*np.sqrt(y_k_dot)*np.linalg.norm(temp_1):
+              if np.abs(temp_2)<=1e-8*np.sqrt(s_k_dot)*np.linalg.norm(temp_1):
                   u = 0
                   u_sign = 0
                   Bx_inv = lambda xx: (a_k/D)*xx
